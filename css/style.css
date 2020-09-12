@@ -240,6 +240,8 @@ body {
     margin-top: 50px;
 }
 
+
+
 /*CONTATO*/
 .contato {
     margin: 5% auto;
@@ -399,4 +401,68 @@ body {
   
   .container {
     padding: 2px 16px;
+  }
+
+  .fotos {
+    
+    margin: 25% auto;
+    max-width: 1280px;
+    max-height: 720px;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.fotos h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+
+.fotos-secao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+/*IMAGENS NO CARROSSEL*/
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .wrapper {
+    overflow: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+  }
+  
+  .gallery {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .gallery__img {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+    min-height: 100vh;
+    object-fit: cover;
+  }
+  
+  .lil-nav {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  
+  }
+  
+  .lil-nav__img {
+    object-fit: cover;
+    max-height: 100%;
+    margin: 10px;
   }
