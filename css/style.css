@@ -6,6 +6,11 @@ ul {
   list-style: none
 }
 
+img{
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
 
 body {
   margin: 0;
@@ -73,6 +78,13 @@ body {
   padding: 60px 0;
   display: flex;
   flex-wrap: wrap
+}
+
+@media only screen and (max-width:600px) {
+  .sobre{
+    text-align: center;
+    padding: 0px;
+  }
 }
 
 .fotos img,.sobre img {
@@ -163,6 +175,10 @@ body {
 }
 
 @media only screen and (max-width:600px) {
+  .fotos{
+    margin-bottom: 25%;    
+    padding-left: 0px;
+  }
   .gallery__img {
       scroll-snap-align: start;
       margin-bottom: 10px;
@@ -178,7 +194,7 @@ body {
 
 .container-doacao {
   text-align: center;
-  margin: 5% auto;
+  margin: 5% auto auto 0px;
   max-width: 1280px;
   max-height: 720px;
   padding-left: 5%;
@@ -282,13 +298,13 @@ body {
 
 @media only screen and (max-width:600px) {
   .imagens-doacao {
-      margin-left: 15%;
+      margin-left: 10%;
       display: grid;
       grid-template-columns: auto auto auto
   }
 
   .conta-bancaria {
-      margin-left: 10%;
+      margin-left: 5%;
       text-align: center;
       padding: 10px;
       width: 250px;
@@ -308,32 +324,26 @@ body {
 }
 
 .contato {
-  margin: 5% auto;
+  margin: 2% auto;
   color: #fff;
-  background-color: #2f939e;
+  background-image: linear-gradient(to left,#75b6bd,#2f939e);
   max-width: 1280px;
   max-height: 720px;
   padding-left: 5%;
   display: flex;
   flex-wrap: wrap;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px
 }
 
 @media only screen and (max-width:600px) {
   .contato {
       margin: 5% auto;
       color: #fff;
-      background-color: #2f939e;
+      background-image: linear-gradient(to left,#75b6bd,#2f939e);
       max-width: 1280px;
       max-height: 1280px;
       padding-left: 5%;
       display: flex;
       flex-wrap: wrap;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      border-radius: 25px
   }
 }
 
@@ -425,6 +435,14 @@ body {
   border-radius: 25px
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+  transition: .3s;
+  width: 70%;
+  border-radius: 5px;
+  margin: 5%
+}
+
 @media only screen and (max-width:600px) {
   .card-container {
       margin: 5% auto;
@@ -432,20 +450,13 @@ body {
       max-height: 720px;
       padding-left: 5%;
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto ;
       flex-wrap: wrap;
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px
   }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
-  transition: .3s;
-  width: 70%;
-  border-radius: 5px;
-  margin: 5%
+  }
 }
 
 .card:hover {
