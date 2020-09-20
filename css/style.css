@@ -15,8 +15,10 @@ body {
 /*HEADER*/
 
 .header {
+  max-width: 1280px;
+  margin: 0 auto;
     overflow: hidden;
-    background-color: #2f939e;
+    background-image: linear-gradient(to left, #c0e4e8, #2f939e);
     padding: 10px;
 }
 
@@ -67,21 +69,7 @@ body {
 }
 
 /*HOME*/
-.container-superior{
-    text-align: right;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.container-superior img{
-    margin: auto;
-    height: auto;
-    width: 1280px;
-}
-
-/*SOBRE*/
 .sobre {
     text-align: right;
     max-width: 1280px;
@@ -122,6 +110,70 @@ body {
     flex: 1 1 160px;
     margin: 0 10px;
     margin-top: 50px;
+}
+
+.fotos {
+    
+  margin: auto;
+  max-width: 1280px;
+  max-height: 720px;
+  padding-left: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.fotos h1 {
+  font-size: 3em;
+  margin: 0 10px 60px 10px;
+}
+
+.fotos-secao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+/*IMAGENS NO CARROSSEL*/
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+}
+
+.gallery {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.lil-nav {
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.lil-nav__img {
+  object-fit: cover;
+  max-height: 100%;
+  margin: 10px;
 }
 
 /*DOACAO*/
@@ -201,10 +253,10 @@ body {
 
 .container-doacao-fotos{
     text-align: center;    
-    margin: 5% auto;
-    max-width: 1280px;
-    max-height: 720px;
-    padding-left: 5%;
+    padding: auto;
+    margin: auto;
+    width: 1280px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     -webkit-border-radius: 25px;
@@ -236,8 +288,7 @@ body {
 
 .doacao-direita{
     flex: 1 1 160px;
-    margin: 0 10px;
-    margin-top: 50px;
+    margin: 5% auto;
 }
 
 
@@ -403,69 +454,6 @@ body {
     padding: 2px 16px;
   }
 
-  .fotos {
-    
-    margin: 25% auto;
-    max-width: 1280px;
-    max-height: 720px;
-    padding-left: 5%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    flex-wrap: wrap;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-}
-
-.fotos h1 {
-    font-size: 3em;
-    margin: 0 10px 60px 10px;
-}
-
-.fotos-secao {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-/*IMAGENS NO CARROSSEL*/
-
-img {
-    display: block;
-    max-width: 100%;
-  }
-  
-  .wrapper {
-    overflow: hidden;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 10px;
-  }
-  
-  .gallery {
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .gallery__img {
-    scroll-snap-align: start;
-    margin-bottom: 10px;
-    min-height: 100vh;
-    object-fit: cover;
-  }
-  
-  .lil-nav {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  
-  }
-  
-  .lil-nav__img {
-    object-fit: cover;
-    max-height: 100%;
-    margin: 10px;
-  }
 
 /*BAZAR*/
 
