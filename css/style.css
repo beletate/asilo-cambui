@@ -634,3 +634,22 @@ img {
       margin: 5% 0 0 20%
   }
 }
+
+.container-post{
+  justify-items: center;
+  text-align: center;
+  margin: 5% auto auto 0;
+  max-width: 1280px;
+  max-height: 720px;
+  padding-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px
+}
+
+
+.comments{
+  margin-left: 25%;
+}
