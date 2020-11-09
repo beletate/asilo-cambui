@@ -7,11 +7,11 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
     /* await driver.get('http://www.google.com/ncr');
     await driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN);
     
-    await driver.findElement(By.className('LC20lb DKV0Md')).click();
     await driver.wait(until.titleIs('webdriver - Google Search'), 1000);
     
- */
-    await driver.get('https://beletate.github.io/asilo-cambui/index.html');
+    */
+   await driver.get('https://beletate.github.io/asilo-cambui/index.html');
+   await driver.findElement(By.className('bazarStation')).click();
     
     
   } finally {
