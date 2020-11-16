@@ -9,7 +9,7 @@ ul {
 img {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  border-radius: 25px;
+  border-radius: 25px
 }
 
 body {
@@ -142,23 +142,21 @@ body {
   align-items: flex-end
 }
 
-.photo-title{
+.photo-title {
   background-image: linear-gradient(to left,#75b6bd,#2f939e);
-  color: white;
+  color: #fff;
   max-width: 100%;
   height: 120px;
   padding: 25px;
-  margin-bottom: 15px;
-  
+  margin-bottom: 15px
 }
 
-
-.page-title{
-  text-align: center; 
-  color:  #2f939e;
-  font-size: 20px;
-
+.page-title {
+  text-align: center;
+  color: #2f939e;
+  font-size: 20px
 }
+
 .wrapper {
   overflow: hidden;
   height: 100vh;
@@ -346,6 +344,7 @@ body {
 
 .contato {
   margin: 2% auto;
+  padding-left: 50%;
   color: #fff;
   background-image: linear-gradient(to left,#75b6bd,#2f939e);
   max-height: 720px;
@@ -369,7 +368,8 @@ body {
 
 .info-contato {
   flex: 1 1 160px;
-  margin: 5% auto
+  margin: 5% auto;
+  margin-left: 10%
 }
 
 .envio-contato {
@@ -635,21 +635,62 @@ img {
   }
 }
 
-.container-post{
+.container-post {
   justify-items: center;
   text-align: center;
   margin: 5% auto auto 0;
   max-width: 1280px;
   max-height: 720px;
   padding-left: 5%;
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  border-radius: 25px
+  border-radius: 25px;
+  position: relative
 }
 
+.comments {
+  margin-left: 10%
+}
 
-.comments{
-  margin-left: 25%;
+.campo-mensagem textarea{
+  border-radius: 10px;
+  color: #2f939e;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2)
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:4px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.post-feitos p {
+  text-align: left;
+  width: 640px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 2px solid #2f939e
 }
